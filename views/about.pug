@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  h1 My Chart Examples
+  p Welcome to My Chart Examples using dynamic data from nodejs/mongodb
+  include ./partials/navbar
+    .page-wrapper
+        .container-fluid
+          .row
+            .col-lg-12
+            h1.m-b-0.text-white #{title}
+            p Welcome to #{title} 
