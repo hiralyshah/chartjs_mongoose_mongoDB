@@ -1,6 +1,6 @@
 # Project Title
 
-In this project one can display different charts using data from mongodb as well mongoose in nodejs
+In this project one can display different charts using dynamic data from mongodb as well mongoose in nodejs
 ![image](https://user-images.githubusercontent.com/9768977/43562729-4935f748-9616-11e8-8e16-586947f0af5a.png)
 ![image](https://user-images.githubusercontent.com/9768977/43562737-52b715c2-9616-11e8-983a-c83a1637405d.png)
 ![image](https://user-images.githubusercontent.com/9768977/43562745-59bead30-9616-11e8-9fd0-b98022798c32.png)
@@ -25,6 +25,9 @@ node test/insertdata_mongoose_test.js
 
 # Then simply start your app
 npm start
+
+you can check website will be up and running on localhost at 3000 port.
+http://localhost:3000
 ```
 
 ### Prerequisites
@@ -36,7 +39,33 @@ you need to install following software
 4)	Mongoose
 5)	robomongo https://robomongo.org/download
 
-
+Name | Description
+-- | --
+bin/ | create server and normalize port
+models/ | Mongoose schema
+models/blog.js | Mongoose schema and model for blog data
+public/ | Static assets (css, img etc)
+public/styleshees/style.css | Main stylesheet for your app
+routes/ | controller for different routes
+routes/chart.js | controller for display different charts
+routes/index.js | controller for navigation bar
+routes/user.js | controller for user account management
+test/ | test folder for inserting test data in database
+test/insertdata_mongoDB_test.js | insert mongodb data
+test/insertdata_mongoose_test.js | insert mongoose data
+views/ | Templates
+views/dashboard | Dashboard related templates
+views/dashboard/barchart.pug | Display bar chart
+views/dashbaord/linechart.pug | Display line chart
+views/dashboard/piechart.pug | Display piechart
+views/dashboard/doughnut.pug | Display doughnut chart
+views/partials/about.pug | About page(rendering test)
+views/partials/error.pug |  Template for error messages
+views/partials/index.pug | Navbar partial template.
+views/partials/layout.pug | Base template.
+app.js | The main application file.
+package.json | NPM   dependencies.
+package-lock.json | Contains exact versions of NPM dependencies in package.json.
 
 ## Authors
 
