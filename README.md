@@ -39,6 +39,8 @@ you need to install following software
 4)	Mongoose
 5)	robomongo https://robomongo.org/download
 
+### Project Structure
+
 Name | Description
 -- | --
 bin/ | create server and normalize port
